@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-04T19:13:58.123Z",
+    "end": "2020-08-04T19:14:04.105Z",
+    "duration": 5982,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "52fdca3d-c37b-478c-9c14-5fcc21546686",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "ace0ad8c-359a-4af9-8cef-094b444affa6",
+        "title": "app.nopos.com automated testing",
+        "fullFile": "/Users/brij/Projects/templates/Automation-With-Selenium-And-Node.js/test/onboarding_screen.test.js",
+        "file": "/test/onboarding_screen.test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "app.nopos.com automated testing \"before each\" hook",
+            "timedOut": false,
+            "duration": 3814,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "page = new Page();\ndriver = page.driver;\nawait page.visit(Config.base_url);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "289a18f3-dc12-49df-ae87-d3f69626c333",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "app.nopos.com automated testing \"after each\" hook",
+            "timedOut": false,
+            "duration": 52,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "await page.quit();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0034d8e4-2c58-444e-8659-bb8ae8145ecd",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "enter wrong organisation handle and wait for error",
+            "fullTitle": "app.nopos.com automated testing enter wrong organisation handle and wait for error",
+            "timedOut": false,
+            "duration": 2112,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const result = await page.submitWrongHandle();\nconsole.log(result)\nexpect(result).to.include('Invaild Org');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "eb780517-d8be-497d-9100-2b9863c5b82d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "eb780517-d8be-497d-9100-2b9863c5b82d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2112,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 50000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2020
+}
